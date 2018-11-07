@@ -20,6 +20,7 @@ import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.RpcClient;
+import com.rabbitmq.client.impl.ClientVersion;
 
 /**
  * RPC client that sends a single request.
@@ -27,6 +28,7 @@ import com.rabbitmq.client.RpcClient;
 public class Client {
 
     public static void main(String[] args) throws Exception {
+        System.out.println("Using RabbitMQ AMQP Client " + ClientVersion.VERSION);
         ConnectionFactory cf = new ConnectionFactory();
         try (Connection c = cf.newConnection()) {
             Channel ch = c.createChannel();
