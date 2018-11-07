@@ -16,10 +16,7 @@
 
 package com.rabbitmq;
 
-import com.rabbitmq.client.Channel;
-import com.rabbitmq.client.Connection;
-import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.RpcClient;
+import com.rabbitmq.client.*;
 import com.rabbitmq.client.impl.ClientVersion;
 
 /**
@@ -32,7 +29,10 @@ public class Client {
         ConnectionFactory cf = new ConnectionFactory();
         try (Connection c = cf.newConnection()) {
             Channel ch = c.createChannel();
-            RpcClient client = new RpcClient(ch, "", SingleUseRpcServer.QUEUE, 5000);
+            RpcClient client = new RpcClient(
+                    new RpcClientParams().channel(ch).exchange("")
+                            .routingKey(SingleUseRpcServer.QUEUE)
+                            .timeout(5000));
             String request = "hello";
             System.out.println("Sending: " + request);
             byte[] response = client.primitiveCall(request.getBytes());

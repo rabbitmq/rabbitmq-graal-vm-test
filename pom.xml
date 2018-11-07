@@ -53,7 +53,7 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <amqp-client.version>5.5.0</amqp-client.version>
+                <amqp-client.version>5.6.0-SNAPSHOT</amqp-client.version>
             </properties>
         </profile>
     </profiles>
@@ -138,4 +138,18 @@
             </plugin>
         </plugins>
     </build>
+
+    <repositories>
+        <repository>
+            <id>sonatype-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
 </project>
