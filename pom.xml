@@ -46,12 +46,24 @@
         <maven-exec-plugin.version>1.6.0</maven-exec-plugin.version>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>default</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <amqp-client.version>5.5.0</amqp-client.version>
+            </properties>
+        </profile>
+    </profiles>
+
     <dependencies>
 
         <dependency>
             <groupId>com.rabbitmq</groupId>
             <artifactId>amqp-client</artifactId>
-            <version>5.5.0</version>
+            <version>${amqp-client.version}</version>
         </dependency>
 
         <dependency>
