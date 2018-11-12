@@ -41,3 +41,10 @@ the request.
 It is possible to use another version of the AMQP Java client:
 
     ./mvnw clean package -Damqp-client.version=5.4.3
+    
+
+## License ##
+
+Licensed under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
+
+_Sponsored by [Pivotal](http://pivotal.io)_
