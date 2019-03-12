@@ -11,7 +11,7 @@
     <licenses>
         <license>
             <name>ASL 2.0</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.html</url>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.html</url>
             <distribution>repo</distribution>
         </license>
     </licenses>
@@ -34,7 +34,7 @@
 
     <organization>
         <name>Pivotal Software, Inc.</name>
-        <url>http://www.rabbitmq.com</url>
+        <url>https://www.rabbitmq.com</url>
     </organization>
 
     <properties>
