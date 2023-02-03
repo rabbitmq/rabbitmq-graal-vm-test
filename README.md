@@ -45,6 +45,6 @@ It is possible to use another version of the AMQP Java client:
 
 ## License ##
 
-Licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
+(c) 2020-2023, VMware Inc or its affiliates.
 
-_Sponsored by [Pivotal](https://pivotal.io)_
+Licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).

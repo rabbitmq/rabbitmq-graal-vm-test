@@ -20,7 +20,7 @@
         <developer>
             <email>info@rabbitmq.com</email>
             <name>Team RabbitMQ</name>
-            <organization>Pivotal Software, Inc.</organization>
+            <organization>VMware, Inc. or its affiliates.</organization>
             <organizationUrl>https://rabbitmq.com</organizationUrl>
         </developer>
     </developers>
@@ -33,7 +33,7 @@
     </scm>
 
     <organization>
-        <name>Pivotal Software, Inc.</name>
+        <name>VMware, Inc. or its affiliates.</name>
         <url>https://www.rabbitmq.com</url>
     </organization>
 
