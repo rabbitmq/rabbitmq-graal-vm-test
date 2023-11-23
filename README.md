@@ -45,6 +45,7 @@ It is possible to use another version of the AMQP Java client:
 
 ## License ##
 
-(c) 2020-2023, VMware Inc or its affiliates.
+(c) 2020-2023 Broadcom. All Rights Reserved.
+The term Broadcom refers to Broadcom Inc. and/or its subsidiaries.
 
 Licensed under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
